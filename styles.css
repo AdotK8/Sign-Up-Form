@@ -1,9 +1,10 @@
 * { 
     box-sizing: border-box;
-    border: solid black;
+    /* border: solid black; */
 }
 
 body {
+    background-color: rgba(163,164,231,0.2);
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -12,19 +13,13 @@ body {
 
 .leftSide {
     width: min(35%);
+    height: 100vh;
     display: flex;
     background-image: url("background.jpg");
     flex-direction:column;
     background-size:cover;
 }
 
-.rightSide {
-    display: flex;
-    flex-direction:column;
-
-   
-    
-}
 .banner { 
     display: flex;
     height: 20%;
@@ -44,7 +39,7 @@ body {
 .logoText {
     font-size: clamp(2rem, 7vw, 3.5rem);
     color: white;
-    font-family:Barriecito;
+    font-family: Barriecito;
 }
 
 .footer, strong {
@@ -59,6 +54,94 @@ body {
     margin-top: auto;
     text-align: center;
     padding-bottom: 5px;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction:column; 
+    width: min(65%);
+    height: 100vh;
     
 }
+
+.top { 
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding-left: 2rem;
+    padding-right: min(10vw, 5rem);
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 0.6);
+    height: 40vh;
+}
+
+form section div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+}
+.middle {
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(163,164,231,0.8);
+    height: 40vh;
+}
+
+form section {
+    display: flex;
+    padding-left: 2rem;
+}
+
+.form-header {
+   padding-left: 2rem;
+   font-size: clamp(1rem, 1.5vw, 2rem);
+   color: rgba(0, 0, 0, 0.6);
+}
+
+section { 
+    gap: 5rem; 
+    margin-bottom: clamp(1rem, 3vh, 3rem);
+}
+
+.input{
+    width: clamp(5rem, 20vw, 16rem);
+    min-height: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    
+}
+
+.label {
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.bottom {
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    height: 20%;
+
+}
+
+button {
+   width: clamp(10rem, 10vw, 20rem); 
+   height: clamp(2rem, 3vw, 5rem);
+   font-size: clamp(0.5rem, 1vw, 1.3rem);
+
+   border: 1px solid rgba(163,164,231,0.6);
+   border-radius: 10px;
+   background-color: rgba(163,164,231,0.6);
+   color: white;
+}
+
+.bottom-text {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.login {
+    color: rgba(163,164,231,0.9)
+}
+
+
 
