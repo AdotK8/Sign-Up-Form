@@ -78,7 +78,7 @@ body {
 form section div{
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: clamp(0.1rem, 0.5vh, 0.6vh);
 
 }
 .middle {
@@ -112,7 +112,7 @@ section {
 }
 
 .label {
-    font-size: clamp(0.5rem, 0.8vw, 1rem);
+    font-size: clamp(0.7rem, 1vw, 1.5rem);
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -141,6 +141,20 @@ button {
 
 .login {
     color: rgba(163,164,231,0.9)
+}
+
+input:valid {
+    border: rgba(0, 0, 0, 0.4) solid 1px;
+}
+
+input:invalid {
+    border: rgba(242, 63, 63, 0.4) solid 1px;
+}
+
+#error {
+    font-size: clamp(0.7rem, 1vw, 1.5rem);
+    color: rgba(242, 63, 63, 0.6);
+    margin-top: 0px;
 }
 
 
